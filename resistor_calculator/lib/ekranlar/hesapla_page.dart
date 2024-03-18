@@ -2,11 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:resistor_calculator/widgets/customContainer.dart';
 
 class HesaplaPage extends StatefulWidget {
-  final String data;
+  //HesaplaPage();
 
-  HesaplaPage({required this.data});
-
-  //const HesaplaPage({super.key});
+  const HesaplaPage({super.key});
 
   @override
   State<HesaplaPage> createState() => _HesaplaPageState();
@@ -51,21 +49,28 @@ class _HesaplaPageState extends State<HesaplaPage> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
+                  SizedBox(
+                    height: screenHeight / 30,
+                  ),
                   Row(
                     children: [
                       Container(
                         width: screenWidth / 6,
                         height: 2,
-                        color: Color.fromARGB(255, 251, 255, 0),
+                        color: const Color.fromARGB(255, 251, 255, 0),
                       ),
                       Container(
                         height: hesapContainerHeight / 3,
                         width: resistorContainerWidth,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(10),
+                        ),
                         child: Row(
                           children: [
                             Container(
                               width: (resistorContainerWidth / 20) * 2,
-                              color: Colors.white,
+                              // color: Colors.white,
                             ),
                             Container(
                               width: (resistorContainerWidth / 20) * 16,
@@ -117,7 +122,7 @@ class _HesaplaPageState extends State<HesaplaPage> {
                             ),
                             Container(
                               width: (resistorContainerWidth / 20) * 2,
-                              color: Colors.white,
+                              // color: Colors.white,
                             ),
                           ],
                         ),
@@ -125,7 +130,7 @@ class _HesaplaPageState extends State<HesaplaPage> {
                       Container(
                         width: screenWidth / 6,
                         height: 2,
-                        color: Color.fromARGB(255, 251, 255, 0),
+                        color: const Color.fromARGB(255, 251, 255, 0),
                       ),
                     ],
                   ),
@@ -138,7 +143,7 @@ class _HesaplaPageState extends State<HesaplaPage> {
             ),
             Container(
               height: butonlarContainerHeight,
-              color: Color.fromARGB(255, 0, 0, 0),
+              color: const Color.fromARGB(255, 0, 0, 0),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -220,11 +225,11 @@ class _HesaplaPageState extends State<HesaplaPage> {
                           onTap: () {
                             setState(() {
                               a = "1";
-                              aColor = Color.fromRGBO(160, 82, 44, 1.0);
+                              aColor = const Color.fromRGBO(160, 82, 44, 1.0);
                             });
                           },
                           child: CustomContainer(
-                            color: Color.fromRGBO(160, 82, 44, 1.0),
+                            color: const Color.fromRGBO(160, 82, 44, 1.0),
                             fontSize: fontSize,
                             butonlarContainerHeight: butonlarContainerHeight,
                             screenWidth: screenWidth,
@@ -236,11 +241,11 @@ class _HesaplaPageState extends State<HesaplaPage> {
                           onTap: () {
                             setState(() {
                               b = "1";
-                              bColor = Color.fromRGBO(160, 82, 44, 1.0);
+                              bColor = const Color.fromRGBO(160, 82, 44, 1.0);
                             });
                           },
                           child: CustomContainer(
-                            color: Color.fromRGBO(160, 82, 44, 1.0),
+                            color: const Color.fromRGBO(160, 82, 44, 1.0),
                             fontSize: fontSize,
                             butonlarContainerHeight: butonlarContainerHeight,
                             screenWidth: screenWidth,
@@ -254,11 +259,11 @@ class _HesaplaPageState extends State<HesaplaPage> {
                               c = "0 ";
                               x = "";
                               y = "";
-                              cColor = Color.fromRGBO(160, 82, 44, 1.0);
+                              cColor = const Color.fromRGBO(160, 82, 44, 1.0);
                             });
                           },
                           child: CustomContainer(
-                            color: Color.fromRGBO(160, 82, 44, 1.0),
+                            color: const Color.fromRGBO(160, 82, 44, 1.0),
                             fontSize: fontSize,
                             butonlarContainerHeight: butonlarContainerHeight,
                             screenWidth: screenWidth,
@@ -270,11 +275,11 @@ class _HesaplaPageState extends State<HesaplaPage> {
                           onTap: () {
                             setState(() {
                               d = "±1%";
-                              dColor = Color.fromRGBO(160, 82, 44, 1.0);
+                              dColor = const Color.fromRGBO(160, 82, 44, 1.0);
                             });
                           },
                           child: CustomContainer(
-                            color: Color.fromRGBO(160, 82, 44, 1.0),
+                            color: const Color.fromRGBO(160, 82, 44, 1.0),
                             fontSize: fontSize,
                             butonlarContainerHeight: butonlarContainerHeight,
                             screenWidth: screenWidth,
@@ -294,11 +299,11 @@ class _HesaplaPageState extends State<HesaplaPage> {
                           onTap: () {
                             setState(() {
                               a = "2";
-                              aColor = Color.fromRGBO(254, 0, 0, 1.0);
+                              aColor = const Color.fromRGBO(254, 0, 0, 1.0);
                             });
                           },
                           child: CustomContainer(
-                            color: Color.fromRGBO(254, 0, 0, 1.0),
+                            color: const Color.fromRGBO(254, 0, 0, 1.0),
                             fontSize: fontSize,
                             butonlarContainerHeight: butonlarContainerHeight,
                             screenWidth: screenWidth,
@@ -310,11 +315,11 @@ class _HesaplaPageState extends State<HesaplaPage> {
                           onTap: () {
                             setState(() {
                               b = "2";
-                              bColor = Color.fromRGBO(254, 0, 0, 1.0);
+                              bColor = const Color.fromRGBO(254, 0, 0, 1.0);
                             });
                           },
                           child: CustomContainer(
-                            color: Color.fromRGBO(254, 0, 0, 1.0),
+                            color: const Color.fromRGBO(254, 0, 0, 1.0),
                             fontSize: fontSize,
                             butonlarContainerHeight: butonlarContainerHeight,
                             screenWidth: screenWidth,
@@ -328,11 +333,11 @@ class _HesaplaPageState extends State<HesaplaPage> {
                               c = "00 ";
                               x = "";
                               y = "";
-                              cColor = Color.fromRGBO(254, 0, 0, 1.0);
+                              cColor = const Color.fromRGBO(254, 0, 0, 1.0);
                             });
                           },
                           child: CustomContainer(
-                            color: Color.fromRGBO(254, 0, 0, 1.0),
+                            color: const Color.fromRGBO(254, 0, 0, 1.0),
                             fontSize: fontSize,
                             butonlarContainerHeight: butonlarContainerHeight,
                             screenWidth: screenWidth,
@@ -344,11 +349,11 @@ class _HesaplaPageState extends State<HesaplaPage> {
                           onTap: () {
                             setState(() {
                               d = "±2%";
-                              dColor = Color.fromRGBO(254, 0, 0, 1.0);
+                              dColor = const Color.fromRGBO(254, 0, 0, 1.0);
                             });
                           },
                           child: CustomContainer(
-                            color: Color.fromRGBO(254, 0, 0, 1.0),
+                            color: const Color.fromRGBO(254, 0, 0, 1.0),
                             fontSize: fontSize,
                             butonlarContainerHeight: butonlarContainerHeight,
                             screenWidth: screenWidth,
@@ -368,11 +373,11 @@ class _HesaplaPageState extends State<HesaplaPage> {
                           onTap: () {
                             setState(() {
                               a = "3";
-                              aColor = Color.fromRGBO(245, 145, 5, 1.0);
+                              aColor = const Color.fromRGBO(245, 145, 5, 1.0);
                             });
                           },
                           child: CustomContainer(
-                            color: Color.fromRGBO(245, 145, 5, 1.0),
+                            color: const Color.fromRGBO(245, 145, 5, 1.0),
                             fontSize: fontSize,
                             butonlarContainerHeight: butonlarContainerHeight,
                             screenWidth: screenWidth,
@@ -384,11 +389,11 @@ class _HesaplaPageState extends State<HesaplaPage> {
                           onTap: () {
                             setState(() {
                               b = "3";
-                              bColor = Color.fromRGBO(245, 145, 5, 1.0);
+                              bColor = const Color.fromRGBO(245, 145, 5, 1.0);
                             });
                           },
                           child: CustomContainer(
-                            color: Color.fromRGBO(245, 145, 5, 1.0),
+                            color: const Color.fromRGBO(245, 145, 5, 1.0),
                             fontSize: fontSize,
                             butonlarContainerHeight: butonlarContainerHeight,
                             screenWidth: screenWidth,
@@ -402,11 +407,11 @@ class _HesaplaPageState extends State<HesaplaPage> {
                               c = " K";
                               x = "";
                               y = "";
-                              cColor = Color.fromRGBO(245, 145, 5, 1.0);
+                              cColor = const Color.fromRGBO(245, 145, 5, 1.0);
                             });
                           },
                           child: CustomContainer(
-                            color: Color.fromRGBO(245, 145, 5, 1.0),
+                            color: const Color.fromRGBO(245, 145, 5, 1.0),
                             fontSize: fontSize,
                             butonlarContainerHeight: butonlarContainerHeight,
                             screenWidth: screenWidth,
@@ -417,7 +422,7 @@ class _HesaplaPageState extends State<HesaplaPage> {
                         GestureDetector(
                           onTap: () {},
                           child: CustomContainer(
-                            color: Color.fromRGBO(245, 145, 5, 1.0),
+                            color: const Color.fromRGBO(245, 145, 5, 1.0),
                             fontSize: fontSize,
                             butonlarContainerHeight: butonlarContainerHeight,
                             screenWidth: screenWidth,
@@ -437,11 +442,11 @@ class _HesaplaPageState extends State<HesaplaPage> {
                           onTap: () {
                             setState(() {
                               a = "4";
-                              aColor = Color.fromRGBO(253, 245, 14, 1.0);
+                              aColor = const Color.fromRGBO(253, 245, 14, 1.0);
                             });
                           },
                           child: CustomContainer(
-                            color: Color.fromRGBO(253, 245, 14, 1.0),
+                            color: const Color.fromRGBO(253, 245, 14, 1.0),
                             fontSize: fontSize,
                             butonlarContainerHeight: butonlarContainerHeight,
                             screenWidth: screenWidth,
@@ -453,11 +458,11 @@ class _HesaplaPageState extends State<HesaplaPage> {
                           onTap: () {
                             setState(() {
                               b = "4";
-                              bColor = Color.fromRGBO(253, 245, 14, 1.0);
+                              bColor = const Color.fromRGBO(253, 245, 14, 1.0);
                             });
                           },
                           child: CustomContainer(
-                            color: Color.fromRGBO(253, 245, 14, 1.0),
+                            color: const Color.fromRGBO(253, 245, 14, 1.0),
                             fontSize: fontSize,
                             butonlarContainerHeight: butonlarContainerHeight,
                             screenWidth: screenWidth,
@@ -471,11 +476,11 @@ class _HesaplaPageState extends State<HesaplaPage> {
                               c = "0 K";
                               x = "";
                               y = "";
-                              cColor = Color.fromRGBO(253, 245, 14, 1.0);
+                              cColor = const Color.fromRGBO(253, 245, 14, 1.0);
                             });
                           },
                           child: CustomContainer(
-                            color: Color.fromRGBO(253, 245, 14, 1.0),
+                            color: const Color.fromRGBO(253, 245, 14, 1.0),
                             fontSize: fontSize,
                             butonlarContainerHeight: butonlarContainerHeight,
                             screenWidth: screenWidth,
@@ -486,7 +491,7 @@ class _HesaplaPageState extends State<HesaplaPage> {
                         GestureDetector(
                           onTap: () {},
                           child: CustomContainer(
-                            color: Color.fromRGBO(253, 245, 14, 1.0),
+                            color: const Color.fromRGBO(253, 245, 14, 1.0),
                             fontSize: fontSize,
                             butonlarContainerHeight: butonlarContainerHeight,
                             screenWidth: screenWidth,
@@ -506,11 +511,11 @@ class _HesaplaPageState extends State<HesaplaPage> {
                           onTap: () {
                             setState(() {
                               a = "5";
-                              aColor = Color.fromRGBO(1, 133, 119, 1.0);
+                              aColor = const Color.fromRGBO(1, 133, 119, 1.0);
                             });
                           },
                           child: CustomContainer(
-                            color: Color.fromRGBO(1, 133, 119, 1.0),
+                            color: const Color.fromRGBO(1, 133, 119, 1.0),
                             fontSize: fontSize,
                             butonlarContainerHeight: butonlarContainerHeight,
                             screenWidth: screenWidth,
@@ -522,11 +527,11 @@ class _HesaplaPageState extends State<HesaplaPage> {
                           onTap: () {
                             setState(() {
                               b = "5";
-                              bColor = Color.fromRGBO(1, 133, 119, 1.0);
+                              bColor = const Color.fromRGBO(1, 133, 119, 1.0);
                             });
                           },
                           child: CustomContainer(
-                            color: Color.fromRGBO(1, 133, 119, 1.0),
+                            color: const Color.fromRGBO(1, 133, 119, 1.0),
                             fontSize: fontSize,
                             butonlarContainerHeight: butonlarContainerHeight,
                             screenWidth: screenWidth,
@@ -540,11 +545,11 @@ class _HesaplaPageState extends State<HesaplaPage> {
                               c = "00 K";
                               x = "";
                               y = "";
-                              cColor = Color.fromRGBO(1, 133, 119, 1.0);
+                              cColor = const Color.fromRGBO(1, 133, 119, 1.0);
                             });
                           },
                           child: CustomContainer(
-                            color: Color.fromRGBO(1, 133, 119, 1.0),
+                            color: const Color.fromRGBO(1, 133, 119, 1.0),
                             fontSize: fontSize,
                             butonlarContainerHeight: butonlarContainerHeight,
                             screenWidth: screenWidth,
@@ -556,11 +561,11 @@ class _HesaplaPageState extends State<HesaplaPage> {
                           onTap: () {
                             setState(() {
                               d = "±0.5%";
-                              dColor = Color.fromRGBO(1, 133, 119, 1.0);
+                              dColor = const Color.fromRGBO(1, 133, 119, 1.0);
                             });
                           },
                           child: CustomContainer(
-                            color: Color.fromRGBO(1, 133, 119, 1.0),
+                            color: const Color.fromRGBO(1, 133, 119, 1.0),
                             fontSize: fontSize,
                             butonlarContainerHeight: butonlarContainerHeight,
                             screenWidth: screenWidth,
@@ -580,11 +585,11 @@ class _HesaplaPageState extends State<HesaplaPage> {
                           onTap: () {
                             setState(() {
                               a = "6";
-                              aColor = Color.fromRGBO(15, 66, 253, 1.0);
+                              aColor = const Color.fromRGBO(15, 66, 253, 1.0);
                             });
                           },
                           child: CustomContainer(
-                            color: Color.fromRGBO(15, 66, 253, 1.0),
+                            color: const Color.fromRGBO(15, 66, 253, 1.0),
                             fontSize: fontSize,
                             butonlarContainerHeight: butonlarContainerHeight,
                             screenWidth: screenWidth,
@@ -596,11 +601,11 @@ class _HesaplaPageState extends State<HesaplaPage> {
                           onTap: () {
                             setState(() {
                               b = "6";
-                              bColor = Color.fromRGBO(15, 66, 253, 1.0);
+                              bColor = const Color.fromRGBO(15, 66, 253, 1.0);
                             });
                           },
                           child: CustomContainer(
-                            color: Color.fromRGBO(15, 66, 253, 1.0),
+                            color: const Color.fromRGBO(15, 66, 253, 1.0),
                             fontSize: fontSize,
                             butonlarContainerHeight: butonlarContainerHeight,
                             screenWidth: screenWidth,
@@ -614,11 +619,11 @@ class _HesaplaPageState extends State<HesaplaPage> {
                               c = " M";
                               x = "";
                               y = "";
-                              cColor = Color.fromRGBO(15, 66, 253, 1.0);
+                              cColor = const Color.fromRGBO(15, 66, 253, 1.0);
                             });
                           },
                           child: CustomContainer(
-                            color: Color.fromRGBO(15, 66, 253, 1.0),
+                            color: const Color.fromRGBO(15, 66, 253, 1.0),
                             fontSize: fontSize,
                             butonlarContainerHeight: butonlarContainerHeight,
                             screenWidth: screenWidth,
@@ -630,11 +635,11 @@ class _HesaplaPageState extends State<HesaplaPage> {
                           onTap: () {
                             setState(() {
                               d = "±0.25%";
-                              dColor = Color.fromRGBO(15, 66, 253, 1.0);
+                              dColor = const Color.fromRGBO(15, 66, 253, 1.0);
                             });
                           },
                           child: CustomContainer(
-                            color: Color.fromRGBO(15, 66, 253, 1.0),
+                            color: const Color.fromRGBO(15, 66, 253, 1.0),
                             fontSize: fontSize,
                             butonlarContainerHeight: butonlarContainerHeight,
                             screenWidth: screenWidth,
@@ -654,11 +659,11 @@ class _HesaplaPageState extends State<HesaplaPage> {
                           onTap: () {
                             setState(() {
                               a = "7";
-                              aColor = Color.fromRGBO(197, 2, 252, 1.0);
+                              aColor = const Color.fromRGBO(197, 2, 252, 1.0);
                             });
                           },
                           child: CustomContainer(
-                            color: Color.fromRGBO(198, 2, 252, 1.0),
+                            color: const Color.fromRGBO(198, 2, 252, 1.0),
                             fontSize: fontSize,
                             butonlarContainerHeight: butonlarContainerHeight,
                             screenWidth: screenWidth,
@@ -670,11 +675,11 @@ class _HesaplaPageState extends State<HesaplaPage> {
                           onTap: () {
                             setState(() {
                               b = "7";
-                              bColor = Color.fromRGBO(197, 2, 252, 1.0);
+                              bColor = const Color.fromRGBO(197, 2, 252, 1.0);
                             });
                           },
                           child: CustomContainer(
-                            color: Color.fromRGBO(197, 2, 252, 1.0),
+                            color: const Color.fromRGBO(197, 2, 252, 1.0),
                             fontSize: fontSize,
                             butonlarContainerHeight: butonlarContainerHeight,
                             screenWidth: screenWidth,
@@ -688,11 +693,11 @@ class _HesaplaPageState extends State<HesaplaPage> {
                               c = "0 M";
                               x = "";
                               y = "";
-                              cColor = Color.fromRGBO(197, 2, 252, 1.0);
+                              cColor = const Color.fromRGBO(197, 2, 252, 1.0);
                             });
                           },
                           child: CustomContainer(
-                            color: Color.fromRGBO(197, 2, 252, 1.0),
+                            color: const Color.fromRGBO(197, 2, 252, 1.0),
                             fontSize: fontSize,
                             butonlarContainerHeight: butonlarContainerHeight,
                             screenWidth: screenWidth,
@@ -704,11 +709,11 @@ class _HesaplaPageState extends State<HesaplaPage> {
                           onTap: () {
                             setState(() {
                               d = " ±0.1%";
-                              dColor = Color.fromRGBO(197, 2, 252, 1.0);
+                              dColor = const Color.fromRGBO(197, 2, 252, 1.0);
                             });
                           },
                           child: CustomContainer(
-                            color: Color.fromRGBO(197, 2, 252, 1.0),
+                            color: const Color.fromRGBO(197, 2, 252, 1.0),
                             fontSize: fontSize,
                             butonlarContainerHeight: butonlarContainerHeight,
                             screenWidth: screenWidth,
@@ -728,7 +733,7 @@ class _HesaplaPageState extends State<HesaplaPage> {
                           onTap: () {
                             setState(() {
                               a = "8";
-                              aColor = Color.fromARGB(255, 107, 107, 107);
+                              aColor = const Color.fromARGB(255, 107, 107, 107);
                             });
                           },
                           child: CustomContainer(
@@ -744,7 +749,7 @@ class _HesaplaPageState extends State<HesaplaPage> {
                           onTap: () {
                             setState(() {
                               b = "8";
-                              bColor = Color.fromARGB(255, 107, 107, 107);
+                              bColor = const Color.fromARGB(255, 107, 107, 107);
                             });
                           },
                           child: CustomContainer(
@@ -881,7 +886,7 @@ class _HesaplaPageState extends State<HesaplaPage> {
                               x = "";
                               y = ".";
                               c = " ";
-                              cColor = Color.fromRGBO(242, 209, 102, 1.0);
+                              cColor = const Color.fromRGBO(242, 209, 102, 1.0);
                             });
                           },
                           child: CustomContainer(
@@ -897,7 +902,7 @@ class _HesaplaPageState extends State<HesaplaPage> {
                           onTap: () {
                             setState(() {
                               d = "±5%";
-                              dColor = Color.fromRGBO(242, 209, 102, 1.0);
+                              dColor = const Color.fromRGBO(242, 209, 102, 1.0);
                             });
                           },
                           child: CustomContainer(
